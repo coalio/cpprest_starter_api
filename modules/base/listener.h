@@ -40,11 +40,6 @@ public:
     // Several abstractions to enforce the use of the correct methods,
     // and to make the code more readable.
 
-    // Returns a reference to the private instance of http_listener.
-    http_listener& get_listener() {
-        return *_listener;
-    }
-
     // Allows the listener to receive GET requests and forwards them to the
     // provided function.
     template <typename F>
